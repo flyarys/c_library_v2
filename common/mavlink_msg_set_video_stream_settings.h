@@ -1,7 +1,7 @@
 #pragma once
 // MESSAGE SET_VIDEO_STREAM_SETTINGS PACKING
 
-#define MAVLINK_MSG_ID_SET_VIDEO_STREAM_SETTINGS 271
+#define MAVLINK_MSG_ID_SET_VIDEO_STREAM_SETTINGS 270
 
 MAVPACKED(
 typedef struct __mavlink_set_video_stream_settings_t {
@@ -18,17 +18,17 @@ typedef struct __mavlink_set_video_stream_settings_t {
 
 #define MAVLINK_MSG_ID_SET_VIDEO_STREAM_SETTINGS_LEN 247
 #define MAVLINK_MSG_ID_SET_VIDEO_STREAM_SETTINGS_MIN_LEN 247
-#define MAVLINK_MSG_ID_271_LEN 247
-#define MAVLINK_MSG_ID_271_MIN_LEN 247
+#define MAVLINK_MSG_ID_270_LEN 247
+#define MAVLINK_MSG_ID_270_MIN_LEN 247
 
 #define MAVLINK_MSG_ID_SET_VIDEO_STREAM_SETTINGS_CRC 232
-#define MAVLINK_MSG_ID_271_CRC 232
+#define MAVLINK_MSG_ID_270_CRC 232
 
 #define MAVLINK_MSG_SET_VIDEO_STREAM_SETTINGS_FIELD_URI_LEN 230
 
 #if MAVLINK_COMMAND_24BIT
 #define MAVLINK_MESSAGE_INFO_SET_VIDEO_STREAM_SETTINGS { \
-    271, \
+    270, \
     "SET_VIDEO_STREAM_SETTINGS", \
     9, \
     {  { "target_system", NULL, MAVLINK_TYPE_UINT8_T, 0, 14, offsetof(mavlink_set_video_stream_settings_t, target_system) }, \
