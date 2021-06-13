@@ -3,7 +3,7 @@
 
 #define MAVLINK_MSG_ID_VISION_POSITION_ESTIMATE 102
 
-MAVPACKED(
+
 typedef struct __mavlink_vision_position_estimate_t {
  uint64_t usec; /*< [us] Timestamp (UNIX time or time since system boot)*/
  float x; /*< [m] Global X position*/
@@ -13,7 +13,7 @@ typedef struct __mavlink_vision_position_estimate_t {
  float pitch; /*< [rad] Pitch angle*/
  float yaw; /*< [rad] Yaw angle*/
  float covariance[21]; /*<  Row-major representation of pose 6x6 cross-covariance matrix upper right triangle (states: x, y, z, roll, pitch, yaw; first six entries are the first ROW, next five entries are the second ROW, etc.). If unknown, assign NaN value to first element in the array.*/
-}) mavlink_vision_position_estimate_t;
+} mavlink_vision_position_estimate_t;
 
 #define MAVLINK_MSG_ID_VISION_POSITION_ESTIMATE_LEN 116
 #define MAVLINK_MSG_ID_VISION_POSITION_ESTIMATE_MIN_LEN 32

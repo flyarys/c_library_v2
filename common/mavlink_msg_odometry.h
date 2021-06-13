@@ -3,7 +3,7 @@
 
 #define MAVLINK_MSG_ID_ODOMETRY 331
 
-MAVPACKED(
+
 typedef struct __mavlink_odometry_t {
  uint64_t time_usec; /*< [us] Timestamp (UNIX Epoch time or time since system boot). The receiving end can infer timestamp format (since 1.1.1970 or since system boot) by checking for the magnitude the number.*/
  float x; /*< [m] X Position*/
@@ -20,7 +20,7 @@ typedef struct __mavlink_odometry_t {
  float velocity_covariance[21]; /*<  Row-major representation of a 6x6 velocity cross-covariance matrix upper right triangle (states: vx, vy, vz, rollspeed, pitchspeed, yawspeed; first six entries are the first ROW, next five entries are the second ROW, etc.). If unknown, assign NaN value to first element in the array.*/
  uint8_t frame_id; /*<  Coordinate frame of reference for the pose data.*/
  uint8_t child_frame_id; /*<  Coordinate frame of reference for the velocity in free space (twist) data.*/
-}) mavlink_odometry_t;
+} mavlink_odometry_t;
 
 #define MAVLINK_MSG_ID_ODOMETRY_LEN 230
 #define MAVLINK_MSG_ID_ODOMETRY_MIN_LEN 230
